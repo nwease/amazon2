@@ -26,35 +26,58 @@ function Header() {
                     <SearchIcon className='h-12 p-4' />
                 </div>
 
-                <div className='text-white flex items-center text-xs space-x-6'>
-                    <div className=''>
-                        <p className=''>
+                <div className='text-white flex items-center text-xs space-x-6 whitespace-nowrap'>
+                    <div className='link'>
+                        <p className='md:text-sm'>
                             Hello, Nicholas Wease
                         </p>
 
-                        <p className='text-lg'>
+                        <p className='font-extrabold md:text-sm'>
                             Accounts & Lists
                         </p>
                     </div>
 
-                    <div className=''>
-                        <p className=''>
+                    <div className='link'>
+                        <p className='md:text-sm'>
                             Returns
                         </p>
 
-                        <p className='text-lg'>
+                        <p className='font-extrabold md:text-sm'>
                             & Orders
                         </p>
                     </div>
 
-                    <div className=''>
+                    <div className='relative link flex items-center'>
+                        <span className='absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold'>
+                            4
+                        </span>
+
                         <ShoppingCartIcon className='h-10' />
 
-                        <p className='text-lg'>
+                        <p className='hidden md:inline font-extrabold md:text-sm mt-5'>
                             Cart
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div className='flex items-center bg-amazon_blue-light text-white text-sm'>
+                <p className='link flex items-center font-extrabold'>
+                    <MenuIcon className='h-6 mr-1' />
+                    All
+                </p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
             </div>
         </header>
     );
