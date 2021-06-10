@@ -5,7 +5,7 @@ import {SearchIcon, MenuIcon, ShoppingCartIcon} from '@heroicons/react/outline';
 function Header() {
     return (
         <header>
-            <div className='flex items-center bg-amazon_blue p-1 flex-grow py-2'>
+            <div className='flex items-center bg-amazon_blue p-1 flex-grow py-2 mr-2'>
                 <div className='mt-2 flex items-center flex-grow sm:flex-grow-0'>
                     <Image
                         className='cursor-pointer'
@@ -26,7 +26,7 @@ function Header() {
                     <SearchIcon className='h-12 p-4' />
                 </div>
 
-                <div className='text-white flex items-center text-xs space-x-6 whitespace-nowrap'>
+                <div className='text-white flex items-center text-xs space-x-6 whitespace-nowrap ml-2'>
                     <div className='link'>
                         <p className='md:text-sm'>
                             Hello, Nicholas Wease
@@ -47,8 +47,8 @@ function Header() {
                         </p>
                     </div>
 
-                    <div className='relative link flex items-center'>
-                        <span className='absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold'>
+                    <div className='relative link flex items-center pr-2'>
+                        <span className='mr-2 absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold'>
                             4
                         </span>
 
@@ -61,23 +61,31 @@ function Header() {
                 </div>
             </div>
 
-            <div className='flex items-center bg-amazon_blue-light text-white text-sm'>
+            <div className='flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm'>
                 <p className='link flex items-center font-extrabold'>
                     <MenuIcon className='h-6 mr-1' />
                     All
                 </p>
 
-                <p></p>
+                <p className='link'>
+                    Today's Deals
+                </p>
 
-                <p></p>
+                <p className='link'>
+                    Customer Service
+                </p>
 
-                <p></p>
+                <p className='link'>
+                    Gift Cards
+                </p>
 
-                <p></p>
+                <p className='link hidden lg:inline-flex'>
+                    Registry
+                </p>
 
-                <p></p>
-
-                <p></p>
+                <p className='link hidden lg:inline-flex'>
+                    Sell
+                </p>
             </div>
         </header>
     );
